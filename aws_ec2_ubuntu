@@ -1,0 +1,6 @@
+sudo apt update
+sudo apt -y upgrade
+curl https://github.com/willfong.keys >> .ssh/authorized_keys
+sudo ufw default deny
+sudo ufw allow 22
+echo "y" | sudo ufw enable
