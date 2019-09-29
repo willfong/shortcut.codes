@@ -1,0 +1,3 @@
+curl -o installChocolatey.cmd https://chocolatey.org/installchocolatey.cmd
+installChocolatey.cmd
+choco install firefox-dev --pre 
