@@ -5,6 +5,11 @@ This is a simple service that makes it easy to download and run commands. Create
 For Windows, you probably will want to run as Administrator.
 
 
+### Why
+
+Everything should be automated. We should be "keeping notes" in automation scripts so we don't have to spend time running the same commands over and over again. Our workstation operation systems should be designed to be command line interface (CLI) friendly
+
+
 ### How it works
 
 `https://shortcut.codes/{GitHub Username}/{Filename}`
