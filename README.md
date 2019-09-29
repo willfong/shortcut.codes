@@ -2,6 +2,8 @@
 
 This is a simple service that makes it easy to download and run commands. Create a repository called `shortcut.codes` and check in your scripts. Use this to run simple tasks without needing a full automation solution. Use it to set up a new Windows workstation: `curl https://shortcut.codes/willfong/windows | cmd`
 
+For Windows, you probably will want to run as Administrator.
+
 
 ### How it works
 
