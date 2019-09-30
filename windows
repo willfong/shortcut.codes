@@ -10,3 +10,4 @@ choco install docker-desktop
 choco install spotify
 choco install slack
 choco install inconsolata
+choco install protonvpn
