@@ -1,14 +1,15 @@
 curl -o installChocolatey.cmd https://chocolatey.org/installchocolatey.cmd
 installChocolatey.cmd
 choco feature enable -n allowGlobalConfirmation
+choco install docker-desktop
 choco install firefox-dev --pre 
 choco install git
 choco install github-desktop
-choco install vscode 
-choco install putty
-choco install docker-desktop
-choco install spotify
-choco install slack
 choco install inconsolata
 choco install protonvpn
+choco install putty
+choco install slack
+choco install spotify
 choco install vmware-workstation-player
+choco install vscode 
+choco install zoom
