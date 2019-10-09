@@ -3,4 +3,4 @@ DEBIAN_FRONTEND=noninteractive DEBIAN_PRIORITY=critical sudo apt-get -q -y -o "D
 sed -i 's/Port 22/Port 62422/g' /etc/ssh/sshd_config
 ufw default deny
 ufw allow 62422
-ufw enable
+yes | ufw enable
