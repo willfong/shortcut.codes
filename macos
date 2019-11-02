@@ -1,6 +1,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew tap homebrew/cask-versions
+
 brew install vim
 brew install zsh
 brew install git
@@ -9,7 +10,6 @@ brew cask install firefox-developer-edition
 brew cask install iterm2
 brew cask install visual-studio-code
 
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-sudo echo `which zsh` >> /etc/shells
+echo `which zsh` | sudo tee -a /etc/shells
 chsh -s `which zsh`
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
