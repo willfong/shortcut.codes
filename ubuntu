@@ -4,3 +4,9 @@ ssh-keygen -t ed25519
 git config --global user.email "willfong@pm.me"
 git config --global user.name "Will Fong"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+sudo update-locale LANG=C.UTF-8
+sudo update-locale LC_ALL=C.UTF-8
+
+sudo snap install code --classic
+sudo snap install spotify
