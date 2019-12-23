@@ -9,4 +9,6 @@ sudo update-locale LANG=C.UTF-8
 sudo update-locale LC_ALL=C.UTF-8
 
 sudo snap install code --classic
+sudo snap install node --channel=12/stable --classic
 sudo snap install spotify
+
