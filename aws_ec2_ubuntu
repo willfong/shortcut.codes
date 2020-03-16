@@ -3,13 +3,4 @@ DEBIAN_FRONTEND=noninteractive DEBIAN_PRIORITY=critical sudo apt-get -q -y -o "D
 curl https://github.com/willfong.keys >> .ssh/authorized_keys
 sudo ufw default deny
 sudo ufw allow 22
-sudo ufw allow 5000
 echo "y" | sudo ufw enable
-
-# Install Docker
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-sudo usermod -aG docker ubuntu
-sudo apt update
-DEBIAN_FRONTEND=noninteractive DEBIAN_PRIORITY=critical sudo apt -y install docker-compose
-sudo shutdown -r now
