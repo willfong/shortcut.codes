@@ -1,0 +1,19 @@
+# We use 5000
+sudo ufw allow 5000
+
+# Install Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker ubuntu
+sudo apt update
+DEBIAN_FRONTEND=noninteractive DEBIAN_PRIORITY=critical sudo apt -y install docker-compose
+
+# Install Node
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+DEBIAN_FRONTEND=noninteractive DEBIAN_PRIORITY=critical sudo apt install -y nodejs
+
+# Install Terraform
+wget https://releases.hashicorp.com/terraform/0.12.23/terraform_0.12.23_linux_amd64.zip
+DEBIAN_FRONTEND=noninteractive DEBIAN_PRIORITY=critical sudo apt install -y unzip
+unzip terraform_0.12.23_linux_amd64.zip
+
