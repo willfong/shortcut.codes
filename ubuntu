@@ -15,3 +15,7 @@ sudo snap install spotify
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
 gsettings set org.gnome.shell.extensions.dash-to-dock intellihide true
+
+sudo snap install docker
+sudo groupadd docker
+sudo usermod -aG docker `whoami`
