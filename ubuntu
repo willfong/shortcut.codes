@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install vim git build-essential zsh powerline fonts-powerline curl ubuntu-restricted-extras ubuntu-restricted-addons fonts-inconsolata ffmpeg ffmpegthumbnailer sqlite3 python3-pip
+sudo apt install vim git build-essential zsh powerline fonts-powerline curl ubuntu-restricted-extras ubuntu-restricted-addons fonts-inconsolata ffmpeg ffmpegthumbnailer sqlite3 python3-pip screen
 ssh-keygen -t ed25519
 git config --global user.email "willfong@pm.me"
 git config --global user.name "Will Fong"
