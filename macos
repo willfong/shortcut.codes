@@ -3,6 +3,7 @@
 brew tap homebrew/cask-versions
 
 brew install git
+brew install node
 brew install vim
 brew install wget
 brew install zsh
