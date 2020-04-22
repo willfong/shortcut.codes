@@ -3,6 +3,7 @@
 brew tap homebrew/cask-versions
 
 brew install git
+brew install mosh
 brew install node
 brew install vim
 brew install wget
@@ -14,6 +15,8 @@ brew cask install iterm2
 brew cask install protonvpn
 brew cask install spotify
 brew cask install visual-studio-code
+brew cask install zoomus
+
 
 echo `which zsh` | sudo tee -a /etc/shells
 chsh -s `which zsh`
