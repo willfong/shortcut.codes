@@ -22,12 +22,12 @@ The service will fetch the following URL:
 
 Verify the script:
 ```
-curl https://shortcut.codes/willfong/echo
+wget -O- https://shortcut.codes/willfong/echo
 ```
 
 Execute:
 ```
-curl https://shortcut.codes/willfong/echo | sh
+wget -O- https://shortcut.codes/willfong/echo | sh
 ```
 
 This works on Windows too:
