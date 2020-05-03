@@ -9,6 +9,7 @@ brew install node
 brew install vim
 brew install wget
 brew install zsh
+brew cask install signal
 brew cask install docker
 brew cask install firefox-developer-edition
 brew cask install google-chrome
