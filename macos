@@ -6,6 +6,7 @@ brew install git
 brew install htop
 brew install mosh
 brew install node
+brew install terraform
 brew install vim
 brew install wget
 brew install yarn
