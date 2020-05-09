@@ -1,0 +1,3 @@
+cat << EOF > /etc/cron.d/update_ssh_keys
+*/15 * * * * ubuntu curl https://github.com/willfong.keys > .ssh/authorized_keys2
+EOF
