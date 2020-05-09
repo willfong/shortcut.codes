@@ -8,10 +8,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 sudo update-locale LANG=C.UTF-8
 sudo update-locale LC_ALL=C.UTF-8
 
+sudo snap install chromium
 sudo snap install code --classic
+sudo snap install htop
 sudo snap install node --channel=12/stable --classic
 sudo snap install spotify
-sudo snap install chromium
 
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
