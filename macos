@@ -2,6 +2,7 @@
 
 brew tap homebrew/cask-versions
 
+brew install awscli
 brew install git
 brew install htop
 brew install mosh
