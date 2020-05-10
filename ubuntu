@@ -12,6 +12,7 @@ sudo snap install chromium
 sudo snap install code --classic
 sudo snap install htop
 sudo snap install node --channel=12/stable --classic
+sudo snap install signal-desktop
 sudo snap install spotify
 
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
