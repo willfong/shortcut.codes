@@ -1,0 +1,7 @@
+sudo apt install -y openvpn dialog python3-pip python3-setuptools
+sudo pip3 install protonvpn-cli
+
+echo "
+sudo protonvpn d; sudo protonvpn c -f; sudo protonvpn s
+sudo protonvpn d; sudo protonvpn s
+"
