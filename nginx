@@ -1,0 +1,37 @@
+cat << EOF > /etc/apt/sources.list.d/nginx.list 
+deb https://nginx.org/packages/ubuntu/ bionic nginx
+deb-src https://nginx.org/packages/ubuntu/ bionic nginx
+EOF
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62
+sudo apt update
+sudo apt install nginx
+sudo apt install software-properties-common
+sudo add-apt-repository universe
+sudo add-apt-repository ppa:certbot/certbot -y
+echo y | sudo apt install certbot python3-certbot-nginx
+
+sudo ufw allow 443
+sudo ufw allow 80
+
+cat << EOF > /etc/nginx/conf.d/5000-example.conf
+server {
+    server_name host.example.com;
+
+    location / {
+      proxy_set_header        Host \$host;
+      proxy_set_header        X-Real-IP \$remote_addr;
+      proxy_set_header        X-Forwarded-For \$proxy_add_x_forwarded_for;
+      proxy_set_header        X-Forwarded-Proto \$scheme;
+      proxy_pass              http://localhost:5000;
+    }
+}
+
+EOF
+
+echo "Next Steps:
+1. Edit /etc/nginx/conf.d/5000-example.conf with your domain name
+2. sudo service nginx restart
+3. sudo certbot --nginx
+"
+
