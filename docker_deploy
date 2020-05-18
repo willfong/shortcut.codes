@@ -1,1 +1,1 @@
-docker run -d --restart=unless-stopped -v /run:/run --name deploy wfong/docker-deploy:bf4186f
+docker run -d --restart=unless-stopped -v /run:/run --name deploy wfong/docker-deploy:a505132
