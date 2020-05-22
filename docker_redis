@@ -1,0 +1,8 @@
+docker run \
+  --name redis \
+  -d \
+  --restart=unless-stopped \
+  --network main \
+  -v /data/redis:/data \
+  redis \
+  redis-server --appendonly yes
