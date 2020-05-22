@@ -2,6 +2,15 @@ sudo apt install -y openvpn dialog python3-pip python3-setuptools
 sudo pip3 install protonvpn-cli
 
 echo "
+# Setup
+
+sudo protonvpn init
+
+# Configure Kill Switch
+sudo proton configure
+
+
+# Commands
 sudo protonvpn d; sudo protonvpn c -f; sudo protonvpn s
 sudo protonvpn d; sudo protonvpn s
 "
