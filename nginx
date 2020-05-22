@@ -1,4 +1,4 @@
-cat << EOF > /etc/apt/sources.list.d/nginx.list 
+cat << 'EOF' | sudo tee /etc/apt/sources.list.d/nginx.list 
 deb https://nginx.org/packages/ubuntu/ bionic nginx
 deb-src https://nginx.org/packages/ubuntu/ bionic nginx
 EOF
@@ -14,7 +14,7 @@ echo y | sudo apt install certbot python3-certbot-nginx
 sudo ufw allow 443
 sudo ufw allow 80
 
-cat << EOF > /etc/nginx/conf.d/5000-example.conf
+cat << 'EOF' | sudo tee /etc/nginx/conf.d/5000-example.conf
 server {
     server_name host.example.com;
 
