@@ -1,4 +1,4 @@
-apt update
+apt-get update
 DEBIAN_FRONTEND=noninteractive DEBIAN_PRIORITY=critical sudo apt-get -q -y -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade
 sed -i 's/Port 22/Port 62422/g' /etc/ssh/sshd_config
 ufw default deny
