@@ -1,15 +1,20 @@
-cat << 'EOF' | sudo tee /etc/apt/sources.list.d/nginx.list 
-deb https://nginx.org/packages/ubuntu/ bionic nginx
-deb-src https://nginx.org/packages/ubuntu/ bionic nginx
-EOF
+# https://nginx.org/en/linux_packages.html#Ubuntu
 
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62
-sudo apt update
-sudo apt install nginx
-sudo apt install software-properties-common
-sudo add-apt-repository universe
-sudo add-apt-repository ppa:certbot/certbot -y
-echo y | sudo apt install certbot python3-certbot-nginx
+
+sudo apt-get install curl gnupg2 ca-certificates lsb-release
+echo "deb http://nginx.org/packages/ubuntu `lsb_release -cs` nginx" | sudo tee /etc/apt/sources.list.d/nginx.list
+curl -fsSL https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install nginx
+
+
+# https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx
+
+sudo snap install core
+sudo snap refresh core
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
 
 sudo ufw allow 443
 sudo ufw allow 80
@@ -34,4 +39,3 @@ echo "Next Steps:
 2. sudo service nginx restart
 3. sudo certbot --nginx
 "
-
