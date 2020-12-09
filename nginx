@@ -22,6 +22,11 @@ sudo ufw allow 80
 cat << 'EOF' | sudo tee /etc/nginx/conf.d/5000-example.conf
 server {
     server_name host.example.com;
+    root /home/yourproject/path;
+
+    location / {
+      try_files $uri $uri/ /index.html;
+    }
 
     location / {
       proxy_set_header        Host \$host;
