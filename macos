@@ -1,28 +1,18 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew tap homebrew/cask-versions
-
-brew install awscli
-brew install git
 brew install htop
-brew install mosh
 brew install node
-brew install terraform
 brew install vim
 brew install wget
 brew install yarn
 brew install zsh
-brew cask install docker
-brew cask install firefox-developer-edition
-brew cask install google-chrome
-brew cask install iterm2
-brew cask install protonvpn
-brew cask install signal
-brew cask install skype
-brew cask install spotify
-brew cask install visual-studio-code
-brew cask install vmware-fusion
-brew cask install zoomus
+
+brew install docker
+brew install google-chrome
+brew install iterm2
+brew install spotify
+brew install visual-studio-code
+brew install zoom
 
 
 echo `which zsh` | sudo tee -a /etc/shells
@@ -30,7 +20,7 @@ chsh -s `which zsh`
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "Configuration"
-git config --global user.email "willfong@pm.me"
+git config --global user.email "willfong@hey.com"
 git config --global user.name "Will Fong"
 
 echo "Run Manually:"
