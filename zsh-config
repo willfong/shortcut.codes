@@ -1,0 +1,7 @@
+cat <<EOF | tee ~/.oh-my-zsh/custom/custom.zsh
+# https://github.com/robbyrussell/oh-my-zsh/issues/2537
+unsetopt share_history
+
+export PATH=\$HOME/.local/bin:\$HOME/.npm/bin:\$PATH
+
+EOF
