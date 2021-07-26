@@ -1,0 +1,5 @@
+cat <<EOF | sudo tee /etc/docker/daemon.json
+{
+  "iptables": false
+}
+EOF
