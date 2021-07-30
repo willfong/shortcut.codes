@@ -19,7 +19,7 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 sudo ufw allow 443
 sudo ufw allow 80
 
-cat << 'EOF' | sudo tee /etc/nginx/conf.d/5000-example.conf
+cat << 'EOF' | sudo tee /etc/nginx/conf.d/TEMPLATE
 server {
     server_name host.example.com;
     root /home/yourproject/path;
@@ -40,7 +40,7 @@ server {
 EOF
 
 echo "Next Steps:
-1. Edit /etc/nginx/conf.d/5000-example.conf with your domain name
+1. Copy /etc/nginx/conf.d/TEMPLATE to 5000.conf (or your port number) and edit the details
 2. sudo service nginx restart
 3. sudo certbot --nginx
 "
