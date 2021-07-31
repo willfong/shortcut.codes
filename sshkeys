@@ -1,5 +1,5 @@
-mkdir -p /home/`whoami`/.ssh
-chmod 700 /home/`whoami`/.ssh
+mkdir -p $HOME/.ssh
+chmod 700 $HOME/.ssh
 cat <<EOF | sudo tee /etc/cron.d/update_ssh_keys
 */15 * * * * `whoami` curl https://github.com/willfong.keys > $HOME/.ssh/authorized_keys2
 EOF
