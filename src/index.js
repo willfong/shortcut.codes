@@ -18,7 +18,7 @@ app.get("/:username/:file", async (req, res, next) => {
         const response = await axios.get(url);
         res.send(response.data);
     } catch(err) {
-        if (err.response.status === 404) {
+        if (err.response?.status === 404) {
             res.status(404).send(`404: NOT FOUND - ${url}`);
         } else {
             next(err)
