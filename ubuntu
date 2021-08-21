@@ -30,4 +30,6 @@ sudo usermod -aG docker `whoami`
 mkdir ~/.npm
 npm config set prefix ~/.npm
 
+mkdir ~/.yarn-global
+yarn config set prefix ~/.yarn-global
 
