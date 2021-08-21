@@ -1,7 +1,7 @@
 sudo apt update
-sudo apt install vim git build-essential zsh powerline fonts-powerline curl ubuntu-restricted-extras ubuntu-restricted-addons fonts-inconsolata ffmpeg ffmpegthumbnailer sqlite3 python3-pip python3-venv screen
+sudo apt install git build-essential zsh powerline fonts-powerline curl ubuntu-restricted-extras ubuntu-restricted-addons fonts-inconsolata ffmpeg ffmpegthumbnailer sqlite3 python3-pip python3-venv screen
 ssh-keygen -t ed25519
-git config --global user.email "willfong@pm.me"
+git config --global user.email "willfong@hey.com"
 git config --global user.name "Will Fong"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -11,11 +11,13 @@ sudo update-locale LC_ALL=C.UTF-8
 sudo snap install chromium
 sudo snap install code --classic
 sudo snap install htop
-sudo snap install node --channel=12/stable --classic
-sudo snap install signal-desktop
-sudo snap install skype --classic
+sudo snap install micro --classic
+sudo snap install node --classic
+sudo snap install slack --classic
 sudo snap install spotify
-
+sudo snap install zoom-client
+sudo snap connect zoom-client:screencast-legacy
+ 
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
 gsettings set org.gnome.shell.extensions.dash-to-dock intellihide true
