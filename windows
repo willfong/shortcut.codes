@@ -1,17 +1,22 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
 choco feature enable -n allowGlobalConfirmation
+
 choco install 7zip.install
+choco install chromium
 choco install docker-desktop
 choco install etcher
+choco install firacode
 choco install firefox-dev --pre 
 choco install git
 choco install github-desktop
 choco install inconsolata
+choco install micro
 choco install protonvpn
 choco install putty
 choco install slack
 choco install spotify
 choco install vmware-workstation-player
-choco install vscode 
+choco install vscode
+choco install warp
 choco install zoom
