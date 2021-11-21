@@ -1,19 +1,20 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+brew install 1password
+brew install micro
+brew install cloudflare-warp
 brew install htop
+brew install iterm2
 brew install node
-brew install vim
 brew install wget
 brew install yarn
+brew install visual-studio-code
+brew install zoom
 brew install zsh
 
 brew install homebrew/cask/docker
 brew install google-chrome
-brew install iterm2
 brew install spotify
-brew install visual-studio-code
-brew install zoom
-
 
 echo `which zsh` | sudo tee -a /etc/shells
 chsh -s `which zsh`
