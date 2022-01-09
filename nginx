@@ -23,6 +23,9 @@ server {
     server_name host.example.com;
     root /home/yourproject/path;
 
+    error_log  /var/log/nginx/example.com-error.log notice;
+    access_log  /var/log/nginx/example.com-access.log;
+
     location / {
       try_files $uri $uri/ /index.html;
     }
