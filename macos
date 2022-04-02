@@ -30,7 +30,7 @@ git config --global user.name "Will Fong"
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
-
+softwareupdate --install-rosetta
 
 echo "Run Manually:"
 echo "ssh-keygen -t ed25519"
