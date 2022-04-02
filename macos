@@ -28,5 +28,9 @@ echo "Configuration"
 git config --global user.email "willfong@hey.com"
 git config --global user.name "Will Fong"
 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+
+
 echo "Run Manually:"
 echo "ssh-keygen -t ed25519"
