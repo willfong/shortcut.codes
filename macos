@@ -1,27 +1,24 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+brew install iterm2
+
 brew install 1password
-brew install aldente
 brew install alfred
 brew install cloudflare-warp
-brew install font-fira-code
+brew install homebrew/cask-fonts/font-fira-code
 brew install htop
-brew install iterm2
 brew install micro
-brew install node
 brew install slack
 brew install visual-studio-code
 brew install wget
 brew install yarn
 brew install zoom
-brew install zsh
+
 
 brew install homebrew/cask/docker
 brew install google-chrome
 brew install spotify
 
-echo `which zsh` | sudo tee -a /etc/shells
-chsh -s `which zsh`
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "Configuration"
