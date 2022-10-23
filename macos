@@ -15,6 +15,10 @@ brew install yarn
 brew install zoom
 
 
+brew install awscli
+brew install jq
+
+
 brew install homebrew/cask/docker
 brew install google-chrome
 brew install spotify
